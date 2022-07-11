@@ -3,11 +3,22 @@ package pk.pl.search;
 import pk.pl.Algorithm;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Search extends Algorithm {
 
-    public Search(ArrayList<Integer> numbersArrayList) {
-        super(numbersArrayList);
+    public int binaryIteratingSearch(int[] array, int searchElement) {
+        System.out.println();
+        return searchElement;
+    }
+
+    //  TODO describe
+    //  Linear search return first position of searchElement
+    public int linearSearch(int[] array, int searchElement) {
+        for (int iterator = 0; iterator < array.length; iterator += 1) {
+            if (array[iterator] == searchElement) {
+                return  iterator;
+            }
+        }
+        return -1;
     }
 }

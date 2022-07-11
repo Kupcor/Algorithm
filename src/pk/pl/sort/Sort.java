@@ -6,21 +6,22 @@ import java.util.ArrayList;
 
 public class Sort extends Algorithm {
 
-    public Sort(ArrayList<Integer> numbersArrayList) {
-        super(numbersArrayList);
-    }
-
     //TODO describe
     public int[] bubbleSort(int[] array) {
         for (int firstIterator = 0; firstIterator < array.length; firstIterator++) {
             for (int secondIterator = 0; secondIterator < array.length; secondIterator++) {
                 if (array[firstIterator] < array[secondIterator]) {
-                    Swipe swipe = new Swipe(array[firstIterator], array[secondIterator]);
-                    array[firstIterator] = swipe.getFirstVar();
-                    array[secondIterator] = swipe.getSecondVar();
+                    Swap swap = new Swap(array[firstIterator], array[secondIterator]);
+                    array[firstIterator] = swap.getFirstVar();
+                    array[secondIterator] = swap.getSecondVar();
                 }
             }
         }
+        return array;
+    }
+
+    public int[] quickSort(int[] array){
+        System.out.println("QuickSort");
         return array;
     }
 }

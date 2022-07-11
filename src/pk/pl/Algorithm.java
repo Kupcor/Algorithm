@@ -5,8 +5,7 @@ import java.util.ArrayList;
 public class Algorithm {
     int[] numbers;  //  Integer array - it will contain numbers/data used in algorithms
 
-    //  Assigning numbers from file (numbersArrayList) to array numbers
-    public Algorithm(ArrayList<Integer> numbersArrayList){
+    public void getDataFromArrayList(ArrayList<Integer> numbersArrayList) {
         this.numbers = new int[numbersArrayList.size()];
         for (int iterator = 0; iterator < this.numbers.length; iterator++){
             this.numbers[iterator] = numbersArrayList.get(iterator);
@@ -28,11 +27,11 @@ public class Algorithm {
 
     //  Classes
     //  Swipe two data class
-    public static class Swipe{
+    public static class Swap {
         private int firstVar;
         private int secondVar;
 
-        public Swipe(int firstVar, int secondVar) {
+        public Swap(int firstVar, int secondVar) {
             this.firstVar = firstVar;
             this.secondVar = secondVar;
             swipe();
