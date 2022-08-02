@@ -1,4 +1,4 @@
-package main.java.pk.pl;
+package pk.pl;
 
 import java.io.File;
 import java.io.FileNotFoundException;
